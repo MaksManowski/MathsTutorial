@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def fib(n):
     if n < 2:
         return 1
@@ -12,5 +15,7 @@ def fib(n):
 
 
 if __name__ == '__main__':
-    for i in range(1,101):
-        print(str(i)+":"+str(fib(i)))
+    t = np.linspace(0, 100, 1001)
+    print(np.repeat(t, 2).reshape(len(t), 2))
+    # for i in range(1,101):
+        # print(str(i)+":"+str(fib(i)))
